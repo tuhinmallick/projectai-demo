@@ -47,69 +47,126 @@ export default function CurrencySelect({ topStart = false, light = false, onCurr
   return (
     <div
       ref={languageSelect}
-      onClick={() => setIsDDOpen((pre) => !pre)}
-      className={`dropdown bootstrap-select image-select center style-default type-currencies ${
-        light ? "color-white" : ""
-      } ${isDDOpen ? "show" : ""}`}
+      className="currency-selector-wrapper"
     >
       <button
         type="button"
-        tabIndex={-1}
-        className={`btn dropdown-toggle btn-light ${isDDOpen ? "show" : ""}`}
-        title={selected.text}
+        onClick={() => setIsDDOpen(!isDDOpen)}
+        className="currency-selector-button"
       >
-        <div className="filter-option">
-          <div className="filter-option-inner">
-            <div className="filter-option-inner-inner">
+        <img
+          src={selected.flag}
+          width={16}
+          height={12}
+          alt={selected.value}
+          className="currency-flag"
+        />
+        <span className="currency-code">{selected.value}</span>
+        <svg 
+          className={`dropdown-arrow ${isDDOpen ? 'open' : ''}`}
+          width="10" 
+          height="6" 
+          viewBox="0 0 10 6" 
+          fill="none"
+        >
+          <path d="M1 1L5 5L9 1" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      </button>
+
+      {isDDOpen && (
+        <div className="currency-dropdown">
+          {currencyOptions.map((currency) => (
+            <button
+              key={currency.id}
+              className={`currency-option ${selected.id === currency.id ? 'selected' : ''}`}
+              onClick={() => handleCurrencySelect(currency)}
+            >
               <img
-                src={selected.flag}
-                width={20}
-                height={15}
-                alt={selected.value}
+                src={currency.flag}
+                width={16}
+                height={12}
+                alt={currency.value}
                 className="currency-flag"
               />
-              <span className="currency-text">{selected.value}</span>
-            </div>
-          </div>
+              <span className="currency-text">{currency.text}</span>
+            </button>
+          ))}
         </div>
-      </button>
-      <div
-        className={`dropdown-menu ${isDDOpen ? "show" : ""}`}
-        style={{
-          maxHeight: "899.688px",
-          overflow: "hidden",
-          minHeight: 100,
-          position: "absolute",
-          inset: "auto auto 0px 0px",
-          margin: 0,
-          transform: `translate(0px, ${topStart ? 22 : -20}px)`,
-        }}
-      >
-        <div className="inner show" style={{ maxHeight: "869.688px", overflowY: "auto" }}>
-          <ul className="dropdown-menu inner show" role="presentation">
-            {currencyOptions.map((currency) => (
-              <li key={currency.id} onClick={() => handleCurrencySelect(currency)}>
-                <a
-                  className={`dropdown-item ${
-                    selected.id === currency.id ? "active selected" : ""
-                  }`}
-                >
-                  <span className="currency-option">
-                    <img
-                      src={currency.flag}
-                      width={20}
-                      height={15}
-                      alt={currency.value}
-                      className="currency-flag"
-                    />
-                    <span className="currency-text">{currency.text}</span>
-                  </span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
+      )}
+
+      <style jsx>{`
+        .currency-selector-wrapper {
+          position: relative;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .currency-selector-button {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          background: transparent;
+          border: none;
+          padding: 8px;
+          cursor: pointer;
+          font-size: 14px;
+          color: #333;
+        }
+
+        .currency-flag {
+          border-radius: 2px;
+          object-fit: cover;
+        }
+
+        .currency-code {
+          font-weight: 500;
+        }
+
+        .dropdown-arrow {
+          transition: transform 0.2s ease;
+        }
+
+        .dropdown-arrow.open {
+          transform: rotate(180deg);
+        }
+
+        .currency-dropdown {
+          position: absolute;
+          top: 100%;
+          right: 0;
+          background: white;
+          border-radius: 8px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          padding: 8px 0;
+          min-width: 200px;
+          z-index: 1000;
+        }
+
+        .currency-option {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          width: 100%;
+          padding: 8px 16px;
+          border: none;
+          background: transparent;
+          cursor: pointer;
+          text-align: left;
+          font-size: 14px;
+          color: #333;
+        }
+
+        .currency-option:hover {
+          background: #f5f5f5;
+        }
+
+        .currency-option.selected {
+          background: #f0f0f0;
+        }
+
+        .currency-text {
+          font-weight: 400;
+        }
+      `}</style>
     </div>
   );
 }
