@@ -49,15 +49,15 @@ export default function SkinChange() {
           <ReactCompareSlider
             itemOne={
               <ReactCompareSliderImage
-                src="https://images.pexels.com/photos/3738339/pexels-photo-3738339.jpeg"
-                srcSet="https://images.pexels.com/photos/3738339/pexels-photo-3738339.jpeg"
+                src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/skincare_before.jpg?v=1721263981&width=375"
+                srcSet="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/skincare_before.jpg?v=1721263981&width=375"
                 alt="Before Treatment"
               />
             }
             itemTwo={
               <ReactCompareSliderImage
-                src="https://images.pexels.com/photos/3738340/pexels-photo-3738340.jpeg"
-                srcSet="https://images.pexels.com/photos/3738340/pexels-photo-3738340.jpeg"
+                src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/skincare_after.jpg?v=1721263981&width=750"
+                srcSet="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/skincare_after.jpg?v=1721263981&width=750"
                 alt="After Treatment"
               />
             }
