@@ -1,19 +1,19 @@
 export const slides = [
   {
-    imgSrc: "/images/slider/fashion-slideshow-01.jpg",
-    title: "Glamorous\nGlam",
+    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/banner1.jpg?v=1721373841&width=600",
+    title: "Bestselling\nBeauty",
     text: "From casual to formal, we've got you covered",
     btnText: "Shop collection",
   },
   {
-    imgSrc: "/images/slider/fashion-slideshow-02.jpg",
-    title: "Simple\nStyle",
+    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/banner2.jpg?v=1721373840&width=1000",
+    title: "Pink on\nPink",
     text: "From casual to formal, we've got you covered",
     btnText: "Shop collection",
   },
   {
-    imgSrc: "/images/slider/fashion-slideshow-03.jpg",
-    title: "Glamorous\nGlam",
+    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/banner3.jpg?v=1721376906&width=1000",
+    title: "Mauve on\nMauve",
     text: "From casual to formal, we've got you covered",
     btnText: "Shop collection",
   },
@@ -869,10 +869,10 @@ export const slides21 = [
 
 export const slides22 = [
   {
-    imgSrc: "https://images.pexels.com/photos/3060257/pexels-photo-3060257.jpeg",
-    alt: "Luxury Lipstick - Premium cosmetics closeup",
-    title: "Luxury Beauty",
-    credit: "Kristina Paukshtite"
+    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/banner3.jpg?v=1721376906&width=1000",
+    alt: "Banner Image 3",
+    title: "Banner Title",
+    credit: ""
   },
   {
     imgSrc: "https://images.pexels.com/photos/17941998/pexels-photo-17941998.jpeg",
