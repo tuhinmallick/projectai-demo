@@ -869,22 +869,22 @@ export const slides21 = [
 
 export const slides22 = [
   {
-    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/banner3.jpg?v=1721376906&width=1000",
-    alt: "Banner Image 3",
-    title: "Banner Title",
+    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/banner1.jpg?v=1721373841&width=600",
+    alt: "Bestselling Beauty",
+    title: "Bestselling Beauty 7",
     credit: ""
   },
   {
-    imgSrc: "https://images.pexels.com/photos/17941998/pexels-photo-17941998.jpeg",
-    alt: "Elegant Perfume Vial Surrounded by Flowers",
-    title: "Floral Fragrance",
-    credit: "Jessica Volpe"
+    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/banner2.jpg?v=1721373840&width=1000",
+    alt: "Pink on Pink",
+    title: "Pink on Pink 7",
+    credit: ""
   },
   {
-    imgSrc: "https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg",
-    alt: "Bestselling Beauty Products - Luxury makeup collection",
-    title: "Bestselling Beauty",
-    credit: "Suzy Hazelwood"
+    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/banner3.jpg?v=1721376906&width=1000",
+    alt: "Mauve on Mauve",
+    title: "Mauve on Mauve 7",
+    credit: ""
   }
 ];
 
