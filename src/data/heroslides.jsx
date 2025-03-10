@@ -869,19 +869,22 @@ export const slides21 = [
 
 export const slides22 = [
   {
+    imgSrc: "https://images.pexels.com/photos/3060257/pexels-photo-3060257.jpeg",
+    alt: "Luxury Lipstick - Premium cosmetics closeup",
+    title: "Luxury Beauty",
+    credit: "Kristina Paukshtite"
+  },
+  {
     imgSrc: "https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg",
-    alt: "Bestselling Beauty Products",
+    alt: "Bestselling Beauty Products - Luxury makeup collection",
     title: "Bestselling Beauty",
+    credit: "Suzy Hazelwood"
   },
   {
-    imgSrc: "https://images.pexels.com/photos/2688991/pexels-photo-2688991.jpeg",
-    alt: "Pink Cosmetics Collection",
+    imgSrc: "https://images.pexels.com/photos/2417636/pexels-photo-2417636.jpeg",
+    alt: "Pink on Pink - Elegant rose-toned cosmetics arrangement",
     title: "Pink on Pink",
-  },
-  {
-    imgSrc: "https://images.pexels.com/photos/2535174/pexels-photo-2535174.jpeg",
-    alt: "Mauve Cosmetics Collection",
-    title: "Mauve on Mauve",
+    credit: "Sarah Chai"
   }
 ];
 
