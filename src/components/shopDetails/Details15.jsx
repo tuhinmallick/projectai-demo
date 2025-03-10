@@ -163,11 +163,10 @@ export default function Details15({ product }) {
                         <span>
                           {isAddedToCartProducts(product.id)
                             ? "Already Added"
-                            : "Add to cart"}{" "}
-                          -{" "}
+                            : "Add to cart"}
                         </span>
                         <span className="tf-qty-price">
-                          ${(product.price * quantity).toFixed(2)}
+                          {" "}€{(product.price * quantity).toFixed(2)}
                         </span>
                       </a>
                       <a

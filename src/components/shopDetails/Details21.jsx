@@ -240,15 +240,13 @@ export default function Details21({ product }) {
                         }}
                         className="tf-btn btn-fill justify-content-center fw-6 fs-16 flex-grow-1 animate-hover-btn "
                       >
-                        <span>
-                          {" "}
+                        <span style={{ marginRight: '8px' }}>
                           {isAddedToCartProducts(product.id)
                             ? "Already Added"
-                            : "Add to cart"}{" "}
-                          -{" "}
+                            : "Add to cart"}
                         </span>
                         <span className="tf-qty-price">
-                          €{(product.price * quantity).toFixed(2)}
+                          {" "}€{(product.price * quantity).toFixed(2)}
                         </span>
                       </a>
                       <a
@@ -291,10 +289,10 @@ export default function Details21({ product }) {
                         <a href="#" className="btns-full">
                           Buy with{" "}
                           <img
-                            alt="image"
+                            alt="PayPal"
                             src="/images/payments/paypal.png"
-                            width={64}
-                            height={18}
+                            width={48}
+                            height={30}
                           />
                         </a>
                         <a href="#" className="payment-more-option">

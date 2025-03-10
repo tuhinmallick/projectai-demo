@@ -92,16 +92,13 @@ export default function Details28({ product }) {
                         }}
                         className="tf-btn btn-fill justify-content-center fw-6 fs-16 flex-grow-1 animate-hover-btn btn-add-to-cart"
                       >
-                        <span>
-                          {" "}
+                        <span style={{ marginRight: '8px' }}>
                           {isAddedToCartProducts(product.id)
                             ? "Already Added"
-                            : "Add to cart"}{" "}
-                          -{" "}
+                            : "Add to cart"}
                         </span>
                         <span className="tf-qty-price total-price">
-                          {" "}
-                          €{(product.price * quantity).toFixed(2)}
+                          {" "}€{(product.price * quantity).toFixed(2)}
                         </span>
                       </a>
                       <a

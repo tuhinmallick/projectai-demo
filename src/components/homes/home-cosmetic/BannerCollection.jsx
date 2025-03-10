@@ -11,9 +11,9 @@ export default function BannerCollection() {
               <div className="img-style">
                 <img
                   className="lazyload"
-                  data-src="https://images.pexels.com/photos/2688992/pexels-photo-2688992.jpeg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/image1.jpg?v=1721208644&width=600"
                   alt="Luxury Cosmetics"
-                  src="https://images.pexels.com/photos/2688992/pexels-photo-2688992.jpeg"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/image1.jpg?v=1721208644&width=600"
                   width={600}
                   height={574}
                 />
@@ -39,9 +39,9 @@ export default function BannerCollection() {
               <div className="img-style">
                 <img
                   className="lazyload"
-                  data-src="https://images.pexels.com/photos/3762892/pexels-photo-3762892.jpeg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/image2.jpg?v=1721209730&width=600"
                   alt="Beautiful Skin Products"
-                  src="https://images.pexels.com/photos/3762892/pexels-photo-3762892.jpeg"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/image2.jpg?v=1721209730&width=600"
                   width={600}
                   height={574}
                 />
@@ -67,9 +67,9 @@ export default function BannerCollection() {
               <div className="img-style">
                 <img
                   className="lazyload"
-                  data-src="https://images.pexels.com/photos/3685523/pexels-photo-3685523.jpeg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/image3.jpg?v=1721209730&width=600"
                   alt="Eco Beauty Products"
-                  src="https://images.pexels.com/photos/3685523/pexels-photo-3685523.jpeg"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/image3.jpg?v=1721209730&width=600"
                   width={600}
                   height={574}
                 />
