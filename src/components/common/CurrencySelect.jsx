@@ -4,7 +4,7 @@ const currencyOptions = [
   {
     id: "currency-1",
     text: "EUR € | Germany",
-    flag: "/images/flags/germany.png",
+    flag: "/images/country/de.svg",
     value: "EUR",
     symbol: "€",
     checked: true,
@@ -12,7 +12,7 @@ const currencyOptions = [
   {
     id: "currency-2",
     text: "USD $ | United States",
-    flag: "/images/flags/us.png",
+    flag: "/images/country/us.svg",
     value: "USD",
     symbol: "$",
     checked: false,
