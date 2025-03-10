@@ -1,22 +1,27 @@
 export const faqs1 = [
   {
-    title: "Pellentesque habitant morbi tristique senectus et netus?",
+    title: "What are the shipping options?",
     content:
-      "The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. For me, the most important part of improving at photography has been sharing it. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "We offer standard and express shipping options. Standard shipping is free for orders over $50, and express shipping is available at an additional cost.",
   },
   {
-    title: "How much is shipping and how long will it take?",
+    title: "How can I track my order?",
     content:
-      "The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. For me, the most important part of improving at photography has been sharing it. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Once your order is shipped, you will receive a tracking number via email. You can use this number to track your order on our website or the carrier's site.",
   },
   {
-    title: "How long will it take to get my package?",
+    title: "What payment methods do you accept?",
     content:
-      "The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. For me, the most important part of improving at photography has been sharing it. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "We accept all major credit cards, PayPal, and Apple Pay. All transactions are secure and encrypted.",
   },
   {
-    title: "Branding is simply a more efficient way to sell things?",
+    title: "What is your return policy?",
     content:
-      "The perfect way to enjoy brewing tea on low hanging fruit to identify. Duis autem vel eum iriure dolor in hendrerit vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis. For me, the most important part of improving at photography has been sharing it. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "You can return any item within 30 days of purchase for a full refund or exchange. Items must be in their original condition and packaging.",
+  },
+  {
+    title: "How do I contact customer support?",
+    content:
+      "You can reach our customer support team via email at support@domain.com or by phone at +1 (800) 123-4567. Our team is available Monday to Friday, 9 AM to 5 PM.",
   },
 ];

@@ -7,8 +7,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MetaComponent from "@/components/common/MetaComponent";
 const metadata = {
-  title: "Faq 1 || Ecomus - Ultimate Reactjs Ecommerce Template",
-  description: "Ecomus - Ultimate Reactjs Ecommerce Template",
+  title: "Frequently Asked Questions || Ecomus - Ultimate Reactjs Ecommerce Template",
+  description: "Find answers to common questions about our products, shipping, returns, and more.",
 };
 export default function FaqPage1() {
   return (
@@ -18,7 +18,7 @@ export default function FaqPage1() {
       <>
         <div className="tf-page-title style-2">
           <div className="container-full">
-            <div className="heading text-center">FAQ 01</div>
+            <div className="heading text-center">Frequently Asked Questions</div>
           </div>
         </div>
         {/* /page-title */}
@@ -32,7 +32,7 @@ export default function FaqPage1() {
                 <Faq3 />
               </div>
               <div className="box tf-other-content radius-10 bg_grey-8">
-                <h5 className="mb_20">Have a question</h5>
+                <h5 className="mb_20">Have a question?</h5>
                 <p className="text_black-2 mb_40">
                   If you have an issue or question that requires immediate
                   assistance, you can click the button below to chat live with a
