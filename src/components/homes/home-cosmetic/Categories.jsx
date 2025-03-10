@@ -18,9 +18,9 @@ export default function Categories() {
                 >
                   <img
                     className="lazyload"
-                    data-src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg"
+                    data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category1.png?v=1721181730&width=160"
                     alt="New Arrivals"
-                    src="https://images.pexels.com/photos/3373739/pexels-photo-3373739.jpeg"
+                    src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category1.png?v=1721181730&width=160"
                     width={160}
                     height={160}
                   />
@@ -40,9 +40,9 @@ export default function Categories() {
               >
                 <img
                   className="lazyload"
-                  data-src="https://images.pexels.com/photos/2633986/pexels-photo-2633986.jpeg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category2.png?v=1721181730&width=160"
                   alt="Best Sellers"
-                  src="https://images.pexels.com/photos/2633986/pexels-photo-2633986.jpeg"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category2.png?v=1721181730&width=160"
                   width={160}
                   height={160}
                 />
@@ -61,9 +61,9 @@ export default function Categories() {
                 >
                   <img
                     className="lazyload"
-                    data-src="https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg"
+                    data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category3.png?v=1721184883&width=160"
                     alt="Foundation"
-                    src="https://images.pexels.com/photos/3785147/pexels-photo-3785147.jpeg"
+                    src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category3.png?v=1721184883&width=160"
                     width={160}
                     height={162}
                   />
@@ -83,9 +83,9 @@ export default function Categories() {
               >
                 <img
                   className="lazyload"
-                  data-src="https://images.pexels.com/photos/3685530/pexels-photo-3685530.jpeg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category4.png?v=1721184883&width=160"
                   alt="Moisturizers"
-                  src="https://images.pexels.com/photos/3685530/pexels-photo-3685530.jpeg"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category4.png?v=1721184883&width=160"
                   width={160}
                   height={162}
                 />
@@ -103,9 +103,9 @@ export default function Categories() {
               >
                 <img
                   className="lazyload"
-                  data-src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category5.png?v=1721184883&width=160"
                   alt="Perfume"
-                  src="https://images.pexels.com/photos/965989/pexels-photo-965989.jpeg"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category5.png?v=1721184883&width=160"
                   width={160}
                   height={160}
                 />
@@ -123,9 +123,9 @@ export default function Categories() {
               >
                 <img
                   className="lazyload"
-                  data-src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category6.png?v=1721184883&width=160"
                   alt="Minis"
-                  src="https://images.pexels.com/photos/4041392/pexels-photo-4041392.jpeg"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category6.png?v=1721184883&width=160"
                   width={160}
                   height={160}
                 />
@@ -144,9 +144,9 @@ export default function Categories() {
                 >
                   <img
                     className="lazyload"
-                    data-src="/images/collections/sale.jpg"
-                    alt="collection-img"
-                    src="/images/collections/sale.jpg"
+                    data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category7.png?v=1721184883&width=160"
+                    alt="Sale"
+                    src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category7.png?v=1721184883&width=160"
                     width={160}
                     height={160}
                   />
@@ -166,9 +166,9 @@ export default function Categories() {
               >
                 <img
                   className="lazyload"
-                  data-src="https://images.pexels.com/photos/3785170/pexels-photo-3785170.jpeg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category8.png?v=1721184883&width=160"
                   alt="Gift Cards"
-                  src="https://images.pexels.com/photos/3785170/pexels-photo-3785170.jpeg"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category8.png?v=1721184883&width=160"
                   width={160}
                   height={160}
                 />
@@ -186,9 +186,9 @@ export default function Categories() {
               >
                 <img
                   className="lazyload"
-                  data-src="/images/collections/cls-cosmetic8.jpg"
-                  alt="collection-img"
-                  src="/images/collections/cls-cosmetic8.jpg"
+                  data-src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category9.png?v=1721184883&width=160"
+                  alt="Under €20"
+                  src="https://demo-ecomus-global3.myshopify.com/cdn/shop/files/category9.png?v=1721184883&width=160"
                   width={160}
                   height={160}
                 />
