@@ -5,103 +5,104 @@ const currencyOptions = [
     id: "currency-1",
     text: "EUR € | Germany",
     flag: "/images/flags/germany.png",
+    value: "EUR",
+    symbol: "€",
     checked: true,
   },
   {
     id: "currency-2",
     text: "USD $ | United States",
     flag: "/images/flags/us.png",
+    value: "USD",
+    symbol: "$",
     checked: false,
   }
 ];
 
-export default function CurrencySelect({ topStart = false, light = false }) {
+export default function CurrencySelect({ topStart = false, light = false, onCurrencyChange }) {
   const [selected, setSelected] = useState(currencyOptions[0]);
   const [isDDOpen, setIsDDOpen] = useState(false);
   const languageSelect = useRef();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (
-        languageSelect.current &&
-        !languageSelect.current.contains(event.target)
-      ) {
-        setIsDDOpen(false); // Close the dropdown if click is outside
+      if (languageSelect.current && !languageSelect.current.contains(event.target)) {
+        setIsDDOpen(false);
       }
     };
-    // Add the event listener when the component mounts
     document.addEventListener("click", handleClickOutside);
-
-    // Cleanup the event listener when the component unmounts
     return () => {
       document.removeEventListener("click", handleClickOutside);
     };
   }, []);
+
+  const handleCurrencySelect = (currency) => {
+    setSelected(currency);
+    setIsDDOpen(false);
+    if (onCurrencyChange) {
+      onCurrencyChange(currency);
+    }
+  };
+
   return (
     <div
       ref={languageSelect}
       onClick={() => setIsDDOpen((pre) => !pre)}
       className={`dropdown bootstrap-select image-select center style-default type-currencies ${
         light ? "color-white" : ""
-      } dropup`}
+      } ${isDDOpen ? "show" : ""}`}
     >
       <button
         type="button"
         tabIndex={-1}
-        className={`btn dropdown-toggle btn-light  ${isDDOpen ? "show" : ""} `}
-        title="EUR € | Germany"
+        className={`btn dropdown-toggle btn-light ${isDDOpen ? "show" : ""}`}
+        title={selected.text}
       >
         <div className="filter-option">
           <div className="filter-option-inner">
             <div className="filter-option-inner-inner">
               <img
                 src={selected.flag}
-                width="640"
-                height="480"
-                alt="image"
+                width={20}
+                height={15}
+                alt={selected.value}
+                className="currency-flag"
               />
-              {selected.text}
+              <span className="currency-text">{selected.value}</span>
             </div>
-          </div>{" "}
+          </div>
         </div>
       </button>
       <div
-        className={`dropdown-menu ${isDDOpen ? "show" : ""} `}
+        className={`dropdown-menu ${isDDOpen ? "show" : ""}`}
         style={{
           maxHeight: "899.688px",
           overflow: "hidden",
-          minHeight: 142,
+          minHeight: 100,
           position: "absolute",
           inset: "auto auto 0px 0px",
           margin: 0,
           transform: `translate(0px, ${topStart ? 22 : -20}px)`,
         }}
-        data-popper-placement={`${!topStart ? "top" : "bottom"}-start`}
       >
-        <div
-          className="inner show"
-          style={{ maxHeight: "869.688px", overflowY: "auto", minHeight: 112 }}
-        >
-          <ul
-            className="dropdown-menu inner show"
-            role="presentation"
-            style={{ marginTop: 0, marginBottom: 0 }}
-          >
-            {currencyOptions.map((elm, i) => (
-              <li onClick={() => setSelected(elm)} key={i}>
+        <div className="inner show" style={{ maxHeight: "869.688px", overflowY: "auto" }}>
+          <ul className="dropdown-menu inner show" role="presentation">
+            {currencyOptions.map((currency) => (
+              <li key={currency.id} onClick={() => handleCurrencySelect(currency)}>
                 <a
                   className={`dropdown-item ${
-                    selected == elm ? "active selected" : ""
+                    selected.id === currency.id ? "active selected" : ""
                   }`}
                 >
-                  <span className="text">
+                  <span className="currency-option">
                     <img
-                      src={elm.flag}
-                      width="640"
-                      height="480"
-                      alt="image"
+                      src={currency.flag}
+                      width={20}
+                      height={15}
+                      alt={currency.value}
+                      className="currency-flag"
                     />
-                    {elm.text}
+                    <span className="currency-text">{currency.text}</span>
                   </span>
                 </a>
               </li>
