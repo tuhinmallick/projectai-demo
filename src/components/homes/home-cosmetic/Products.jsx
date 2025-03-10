@@ -4,6 +4,7 @@ import { products54 } from "@/data/products";
 import { Link } from "react-router-dom";
 import { Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "./Products.css";
 
 export default function Products() {
   const { setQuickViewItem } = useContextElement();
@@ -57,61 +58,7 @@ export default function Products() {
                         width={360}
                         height={360}
                       />
-                      <img
-                        className="lazyload img-hover"
-                        src={product.imgHoverSrc}
-                        alt={product.title}
-                        width={360}
-                        height={360}
-                      />
                     </Link>
-                    <div className="list-product-btn absolute-2">
-                      <a
-                        onClick={() => addToWishlist(product.id)}
-                        className="box-icon bg_white wishlist btn-icon-action"
-                      >
-                        <span
-                          className={`icon icon-heart ${
-                            isAddedtoWishlist(product.id) ? "added" : ""
-                          }`}
-                        />
-                        <span className="tooltip">
-                          {isAddedtoWishlist(product.id)
-                            ? "Already Wishlisted"
-                            : "Add to Wishlist"}
-                        </span>
-                        <span className="icon icon-delete" />
-                      </a>
-                      <a
-                        href="#compare"
-                        data-bs-toggle="offcanvas"
-                        aria-controls="offcanvasLeft"
-                        onClick={() => addToCompareItem(product.id)}
-                        className="box-icon bg_white compare btn-icon-action"
-                      >
-                        <span
-                          className={`icon icon-compare ${
-                            isAddedtoCompareItem(product.id) ? "added" : ""
-                          }`}
-                        />
-                        <span className="tooltip">
-                          {" "}
-                          {isAddedtoCompareItem(product.id)
-                            ? "Already Compared"
-                            : "Add to Compare"}
-                        </span>
-                        <span className="icon icon-check" />
-                      </a>
-                      <a
-                        href="#quick_view"
-                        onClick={() => setQuickViewItem(product)}
-                        data-bs-toggle="modal"
-                        className="box-icon bg_white quickview tf-btn-loading"
-                      >
-                        <span className="icon icon-view" />
-                        <span className="tooltip">Quick View</span>
-                      </a>
-                    </div>
                   </div>
                   <div className="card-product-info text-center">
                     <Link
@@ -120,24 +67,15 @@ export default function Products() {
                     >
                       {product.title}
                     </Link>
-                    <div className="d-flex align-items-center justify-content-center gap-2 mb-2">
-                      <div className="rating">
-                        <span className="stars">{product.rating} ★</span>
-                        <span className="reviews">({product.reviews})</span>
-                      </div>
-                      <span className="size">{product.size}</span>
-                    </div>
-                    <div className="price-cart-wrap d-flex align-items-center justify-content-between">
-                      <span className="price">€{product.price.toFixed(2)}</span>
-                      <a
-                        onClick={() => addProductToCart(product.id)}
-                        className="btn-add-cart"
-                      >
-                        {isAddedToCartProducts(product.id)
-                          ? "Added"
-                          : "Add to cart"}
-                      </a>
-                    </div>
+                    <div className="price mb-3">€{product.price.toFixed(2)}</div>
+                    <button
+                      onClick={() => addProductToCart(product.id)}
+                      className="add-to-cart-btn"
+                    >
+                      {isAddedToCartProducts(product.id)
+                        ? "ADDED TO CART"
+                        : "ADD TO CART"}
+                    </button>
                   </div>
                 </div>
               </SwiperSlide>
