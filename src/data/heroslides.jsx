@@ -875,16 +875,16 @@ export const slides22 = [
     credit: "Kristina Paukshtite"
   },
   {
+    imgSrc: "https://images.pexels.com/photos/17941998/pexels-photo-17941998.jpeg",
+    alt: "Elegant Perfume Vial Surrounded by Flowers",
+    title: "Floral Fragrance",
+    credit: "Jessica Volpe"
+  },
+  {
     imgSrc: "https://images.pexels.com/photos/2533266/pexels-photo-2533266.jpeg",
     alt: "Bestselling Beauty Products - Luxury makeup collection",
     title: "Bestselling Beauty",
     credit: "Suzy Hazelwood"
-  },
-  {
-    imgSrc: "https://images.pexels.com/photos/2417636/pexels-photo-2417636.jpeg",
-    alt: "Pink on Pink - Elegant rose-toned cosmetics arrangement",
-    title: "Pink on Pink",
-    credit: "Sarah Chai"
   }
 ];
 
