@@ -5756,8 +5756,8 @@ export const products53 = [
 export const products54 = [
   {
     id: 382,
-    imgSrc: "/images/products/cosmetic1.jpg",
-    imgHoverSrc: "/images/products/cosmetic2.jpg",
+    imgSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/1.png?v=1721189581&width=713",
+    imgHoverSrc: "https://demo-ecomus-global3.myshopify.com/cdn/shop/files/1.4.png?v=1721189582&width=713",
     title: "Super Serum Skin Tint SPF",
     price: 48,
     currency: "€",
