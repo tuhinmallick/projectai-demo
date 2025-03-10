@@ -59,7 +59,7 @@ export default function ShopCart() {
                 </span>
               </div>
               <div className="tf-progress-msg">
-                Buy <span className="price fw-6">$75.00</span> more to enjoy
+                Buy €75.00 more to enjoy
                 <span className="fw-6">Free Shipping</span>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function ShopCart() {
                           </Link>
                           <div className="meta-variant">Light gray</div>
                           <div className="price fw-6">
-                            ${elm.price?.toFixed(2)}
+                            €{elm.price?.toFixed(2)}
                           </div>
                           <div className="tf-mini-cart-btns">
                             <div className="wg-quantity small">

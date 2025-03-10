@@ -2408,7 +2408,7 @@ export const products21 = [
       "Skill: Beginner-Advanced",
       "Use: All Around",
       "Weight: 19.8 lbs",
-      "Sizes: 10’6″x32″x6″",
+      "Sizes: 10'6\"x32\"x6\"",
       "Warranty: 1-year",
     ],
     new: true,
@@ -2447,7 +2447,7 @@ export const products21 = [
       "Skill: Beginner-Advanced",
       "Use: All Around",
       "Weight: 19.8 lbs",
-      "Sizes: 10’6″x32″x6″",
+      "Sizes: 10'6\"x32\"x6\"",
       "Warranty: 2-year",
     ],
     populer: true,
@@ -2486,7 +2486,7 @@ export const products21 = [
       "Skill: Beginner-Advanced",
       "Use: All Around",
       "Weight: 19.8 lbs",
-      "Sizes: 10’6″x32″x6″",
+      "Sizes: 10'6\"x32\"x6\"",
       "Warranty: 3-year",
     ],
     recommend: true,
@@ -5760,6 +5760,7 @@ export const products54 = [
     imgHoverSrc: "/images/products/cosmetic2.jpg",
     title: "Super Serum Skin Tint SPF",
     price: 48,
+    currency: "€",
   },
   {
     id: 383,
@@ -5767,6 +5768,7 @@ export const products54 = [
     imgHoverSrc: "/images/products/cosmetic4.jpg",
     title: "Sephora Colorful® Eyeshadow",
     price: 18,
+    currency: "€",
   },
   {
     id: 384,
@@ -5774,6 +5776,7 @@ export const products54 = [
     imgHoverSrc: "/images/products/cosmetic6.jpg",
     title: "Mini Self Tanning Natural Glow",
     price: 18,
+    currency: "€",
   },
   {
     id: 385,
@@ -5781,6 +5784,7 @@ export const products54 = [
     imgHoverSrc: "/images/products/cosmetic8.jpg",
     title: "Lip Butter Balm for Hydration & Shine",
     price: 24,
+    currency: "€",
   },
   {
     id: 386,
@@ -5788,6 +5792,7 @@ export const products54 = [
     imgHoverSrc: "/images/products/cosmetic10.jpg",
     title: "Unreal Liquid Blush",
     price: 24,
+    currency: "€",
   },
   {
     id: 387,
@@ -5795,6 +5800,7 @@ export const products54 = [
     imgHoverSrc: "/images/products/cosmetic12.jpg",
     title: "SOS Daily Rescue Facial Spray",
     price: 24,
+    currency: "€",
   },
   {
     id: 388,
@@ -5802,6 +5808,7 @@ export const products54 = [
     imgHoverSrc: "/images/products/cosmetic14.jpg",
     title: "Radiant Creamy Concealer",
     price: 64,
+    currency: "€",
   },
   {
     id: 389,
@@ -5809,6 +5816,7 @@ export const products54 = [
     imgHoverSrc: "/images/products/cosmetic16.jpg",
     title: "Drunk Elephant",
     price: 32,
+    currency: "€",
   },
 ];
 
