@@ -8,9 +8,10 @@ const currencyOptions = [
     checked: true,
   },
   {
-    value: "us",
-    thumbnail: "/images/country/us.svg",
-    text: "EUR € | Germany"
+    id: "currency-2",
+    text: "USD $ | United States",
+    flag: "/images/flags/us.png",
+    checked: false,
   }
 ];
 
