@@ -10,6 +10,19 @@
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
     <script>
+      window.chatwootSettings = {
+        position: "left", // Can be "left" or "right"
+        darkMode: "auto", // Options: "light" (default) or "auto"
+        type: "expanded_bubble", // Options: "standard" (default) or "expanded_bubble"
+        showUnreadMessagesDialog: false, // Disable the unread message dialog
+        hideMessageBubble: false, // Set to true to hide the bubble
+        useBrowserLanguage: true, // Use browser's language setting instead
+        locale: "de", // Set the language code
+        launcherTitle: "🎨 Lass uns zusammen malen!", // For expanded bubble [3][6]
+        showPopoutButton: true,          // Enable popout window [3]
+        baseDomain: ".callapro.de",      // Cross-subdomain tracking [1][6]
+      };
+      
       (function(d,t) {
         var BASE_URL="https://n8n-chatwoot.xuity6.easypanel.host";
         var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
